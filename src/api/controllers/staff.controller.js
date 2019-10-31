@@ -2,7 +2,7 @@ const Staff = require('../models/staff.model');
 const HttpStatus = require('http-status-codes');
 const CheckAuth = require('../../middleware/check-auth');
 
-const Joi = require('Joi');
+
 
 (module.exports) = {
 

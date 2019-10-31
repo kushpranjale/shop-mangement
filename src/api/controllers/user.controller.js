@@ -1,6 +1,6 @@
 const User = require('../models/user.model');
 const HttpStatus = require('http-status-codes');
-const Joi = require('Joi');
+
 const jwt = require("jsonwebtoken");
 const bcrypt = require('bcrypt');
 
