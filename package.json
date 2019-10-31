@@ -1,7 +1,6 @@
 {
   "name": "shop-management-backend",
   "version": "1.0.0",
-  "description": "",
   "engines": {
     "node": "10.15.0"
   },
@@ -26,5 +25,14 @@
     "start": "node src/app.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kushpranjale/shop-mangement.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kushpranjale/shop-mangement/issues"
+  },
+  "homepage": "https://github.com/kushpranjale/shop-mangement#readme",
+  "description": ""
 }
