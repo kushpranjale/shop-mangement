@@ -2463,7 +2463,7 @@ module.exports = ".sidenav-toggle {\r\n  display: none;\r\n  padding: 0;\r\n  ma
 /***/ "./src/app/tool-bar/tool-bar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<mat-toolbar style=\"height: 50px; font-size: 13px; font-family: sans-serif;\" color=\"accent\" class=\"my-toolbar\">\n  <button mat-button (click) = \"toggleSidenav.emit()\"\n  class=\"sidenav-toggle\">\n   <mat-icon>\n     menu\n   </mat-icon>\n  </button>\n <span>Welcome <span>{{userId}}</span></span>\n <div style=\"position: absolute; right: 100px;\"><button mat-button [routerLink]=\"['/dashboard/home']\" routerLinkActive=\"router-link-active\"  ><mat-icon>home</mat-icon> Home ok</button></div>\n <div  style=\"position: absolute; right: 30px;\" ><button  mat-button  (click)=\"logoutUser()\">Logout</button></div>\n</mat-toolbar>\n"
+module.exports = "<mat-toolbar style=\"height: 50px; font-size: 13px; font-family: sans-serif;\" color=\"accent\" class=\"my-toolbar\">\n  <button mat-button (click) = \"toggleSidenav.emit()\"\n  class=\"sidenav-toggle\">\n   <mat-icon>\n     menu\n   </mat-icon>\n  </button>\n <span>Welcome <span>{{userId}}</span></span>\n <div style=\"position: absolute; right: 100px;\"><button mat-button [routerLink]=\"['/dashboard/home']\" routerLinkActive=\"router-link-active\"  ><mat-icon>home</mat-icon> Home</button></div>\n <div  style=\"position: absolute; right: 30px;\" ><button  mat-button  (click)=\"logoutUser()\">Logout</button></div>\n</mat-toolbar>\n"
 
 /***/ }),
 
