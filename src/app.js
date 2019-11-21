@@ -1,3 +1,14 @@
+const throng = require('throng')
+const PORT = process.env.PORT || 8080;
+//newly line added
+const WORKERS = process.env.WEB_CONCURRENCY || 1
+//newly line added
+throng({
+  workers: WORKERS,
+  lifetime: Infinity
+}, start)
+
+function start() {
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require("cors")
@@ -5,8 +16,9 @@ const app = express();
 const path = require('path');
 const mongoose = require('mongoose');
 const router = require('./config/router');
-const PORT = process.env.PORT || 8080;
-mongoose.connect("mongodb+srv://lav:fL6ytZix7wPGBT58@cluster0-jltch.mongodb.net/shop-db?retryWrites=true&w=majority",{ useNewUrlParser: true })
+
+
+mongoose.connect("mongodb+srv://lav:fL6ytZix7wPGBT58@cluster0-jltch.mongodb.net/shop-db?retryWrites=true&w=majority",{useUnifiedTopology : true , useNewUrlParser: true})
 .then( () => {
   console.log("connected!!!");
 })
@@ -25,3 +37,4 @@ app.get('*',(req,res)=> {
 app.listen(PORT,()=>{
     console.log("listening")
 })
+}
