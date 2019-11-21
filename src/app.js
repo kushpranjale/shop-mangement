@@ -28,7 +28,7 @@ mongoose.connect("mongodb+srv://lav:fL6ytZix7wPGBT58@cluster0-jltch.mongodb.net/
 mongoose.set('useCreateIndex', true);
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/images',express.static(path.join('src/images')))
+app.use('/images',express.static(path.join('../src/images')))
 app.use("/api", router);
 app.use(express.static(path.join(__dirname,'../public')));
 app.get('*',(req,res)=> {
