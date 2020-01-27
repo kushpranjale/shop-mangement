@@ -1,2 +1,3 @@
-# shop-mangement front-end : Angular, angular material
+# shop-mangement
+front-end : Angular, angular material
 bakend: NodeJS, ExpressJs and mongoDB
